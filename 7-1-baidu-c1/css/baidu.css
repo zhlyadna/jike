@@ -1,0 +1,480 @@
+/* 全局 */
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    font-family: "宋体";
+    font-size: 14px;
+} 
+ul,li {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-size: 14px;
+}
+a:hover {
+    cursor: pointer;
+}
+input:focus {
+    outline: none;
+}
+img{
+    border:0;
+}
+
+/* 顶部link */
+.top {
+    height: 26px;
+    padding: 15px 0;
+}
+.top ul {
+    width: 475px;
+    height: 26px;
+    line-height: 26px;
+    float: right;
+}
+.top ul li {
+    float: left;
+    margin-left: 25px;
+    display: inline;
+    font-size: 13px;
+}
+.top ul li a {
+    display: block;
+    height: 26px;
+    color: #333;
+}
+.top ul li a:hover {
+    color: #0000ff;
+}
+.top ul li.b {
+    font-weight: bold;
+}
+.top ul li.more {
+    width: 60px;
+    height: 26px;
+    background: #38f;
+    text-align: center;
+}
+.top ul li .block{
+    display: block;
+}
+.top ul li.more .zi {
+    color: #fff;
+    text-decoration: none;
+}
+.logo {
+    clear: both;
+    text-align: center;
+}
+
+/* 顶部下拉 */
+.downs{
+    width: 70px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px #f0f0f0;
+    background: #fff;
+}
+.downs a{
+    display: block;
+    float: left;
+    width: 70px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;  
+}
+#down1{
+    position: relative;
+}
+.down1_content{
+    position: absolute;
+    top: 26px;
+    left: -25px;
+    display: none;
+}
+#down2{
+    position: relative;
+}
+.down2_content{
+    position: absolute;
+    top: 26px;
+    left: -25px;
+    display: none;
+}
+
+/* 百度logo */
+.logo img {
+    width: 270px;
+    height: 129px;
+}
+
+/* 搜索框 */
+.search {
+    width: 662px;
+    height: 100px;
+    margin: 15px auto;
+}
+.search .text {
+    float: left;
+    width: 560px;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+}
+.search .text input{
+    width: 538px;
+    height: 32px;
+    line-height: 32px\9;
+    padding: 0 10px;
+    border: 0;
+}
+.search .text a{
+    width: 558px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    display: block;
+    cursor:none;
+}
+.search .text a:hover,.search .text a:focus{
+    border: 1px solid #3171f3;
+}
+.search .submit {
+    float: left;
+    width: 100px;
+    height: 38px;
+    background: #38f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.search .submit:hover{
+    background-color: #3171f3;
+    box-shadow:1px 1px 2px #ccc;    
+}
+
+/* 内容 */
+.baidu{ 
+    width: 895px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+.baidu a{ 
+    text-decoration:none;
+    color: #333;
+}
+
+/* 内容.头部切换 */
+.baidu .title{ 
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.baidu .title ul{ 
+    float: left;
+}
+.baidu .title ul li{ 
+    float: left;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.baidu .title ul li.hover{ 
+    background: #9a9da2 !important;
+}
+.baidu .title ul li:hover{ 
+    background: #b3b6bb;
+}
+.baidu .title ul li.hover a,.baidu .title ul li:hover a{ 
+    color: #fff;
+}
+.baidu .title .set{ 
+    float: right;
+    background: url(../image/set.png) center center no-repeat;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* 内容.正文部分 */
+.baidu .content{ 
+    padding: 0 20px;
+    overflow: hidden;
+    display: none;
+}
+.baidu .show{ 
+    display: block;
+}
+
+/* 设置 */
+#tab{
+    position: relative;
+}
+.setcontent{
+    display: none;
+    position: absolute;
+    top: 41px;
+    background: #fff;
+    padding: 20px;
+    width: 855px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px #f0f0f0;
+}
+.setcontent ul{
+    padding: 20px 0;
+}
+.setcontent ul li{
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin:0 10px 10px 0;
+    float: left;
+    display: inline;
+}
+
+/* 内容.我的关注 */
+.baidu .tab_me{ 
+    padding: 15px 0;
+}
+.baidu .tab_me .manage{ 
+    width: 852px;
+    min-height: 200px;
+    margin: 0 auto;  
+}
+
+/* 内容.推荐 */
+/* 左侧 */
+.baidu .tab_recommend .lt{ 
+    width: 540px;
+    float: left;
+    padding-top: 15px;
+}
+.baidu .tab_recommend .lt li{ 
+    height: 106px;
+    padding: 10px 5px 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.baidu .tab_recommend .lt li dl{ 
+    float: left;
+    width: 340px;
+}
+.baidu .tab_recommend .lt li dl dt{ 
+    color: #333;
+    font-weight: bold;
+    line-height: 22px;
+    height: 90px;
+    font-size: 18px;
+}
+.baidu .tab_recommend .lt li dl dd{ 
+    color: #999;
+    font-size: 14px;
+}
+.baidu .tab_recommend .lt .img{ 
+    float: right;
+    width: 176px;
+    height: 106px;
+}
+/* 右侧 */
+.baidu .tab_recommend .rt{ 
+    float: right;
+    width: 290px;
+    padding: 15px 0;
+}
+.baidu .tab_recommend .rt .rttitile{ 
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+.baidu .tab_recommend .rt ul li{ 
+    width: 145px;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+}
+
+/* 内容.导航 */
+.baidu .tab_nav{ 
+    padding: 15px 0;
+}
+.baidu .tab_nav ul{
+    width: 852px;
+    margin: 0 auto;
+}
+.baidu .tab_nav ul li{ 
+    float: left;
+    width: 128px;
+    height: 60px;
+    line-height: 60px;
+    background: #fcfcfc;
+    margin: 7px;
+    display: inline;
+}
+.baidu .tab_nav ul li img{ 
+    float: left; 
+    margin-top: 22px; 
+    margin-left: 10px;
+    display: inline;
+}
+.baidu .tab_nav ul li span{
+    display: block;
+    float: left; 
+    padding-left: 10px;
+}
+
+/* 内容.视频 */
+.baidu .tab_view{ 
+    padding: 15px 0;
+}
+.baidu .tab_view ul{
+    width: 852px;
+    margin: 0 auto;
+}
+.baidu .tab_view ul li{ 
+    float: left;
+    width: 195px;
+    margin: 9px;
+    display: inline;
+}
+.baidu .tab_view ul li dl dt{ 
+    height: 100px;
+}
+.baidu .tab_view ul li dl dd{ 
+    padding: 5px;
+    line-height: 21px;
+    background: #F5F5F5;
+    font-size: 12px;
+}
+
+/* 内容.购物 */
+.baidu .tab_shop{ 
+    padding: 15px 0;
+}
+.baidu .tab_shop ul{
+    width: 852px;
+    margin: 0 auto;
+}
+.baidu .tab_shop ul li{ 
+    float: left;
+    width: 195px;
+    margin: 9px;
+    display: inline;
+}
+.baidu .tab_shop ul li dl dt{ 
+    height: 118px;
+}
+.baidu .tab_shop ul li dl dd{ 
+    padding: 5px;
+    line-height: 21px;
+    font-size: 12px;
+}
+.baidu .tab_shop ul li dl dd a{ 
+    display: block;
+    float: left;
+
+}
+.baidu .tab_shop ul li dl dd strong{ 
+    display: block;
+    float: right;
+    color: #f00;
+}
+
+
+/* 隐藏右侧导航 */
+.link{
+    width: 85px;
+    border-left: 1px solid #e7e7e7;
+    position: absolute;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    height: 100%;
+    min-height: 680px;
+    display: none;
+}
+.link a{
+    text-decoration: none;
+}
+.link .up{
+    width: 85px;
+    height: 26px;
+    line-height: 26px;
+    padding: 15px 0;
+    text-align: center;
+}
+.link .up a{
+    color: #333;
+}
+.link ul{
+    font-size: 12px;
+    width: 85px;
+    text-align: center;
+    height: 580px;
+}
+.link ul li{
+    margin: 0 auto;
+    width: 60px;
+    height:70px;
+    border-top:1px solid #f0f0f0;
+    padding-top: 10px;
+    float: none;
+    display: block;
+}
+.link ul li span{
+    height:24px;
+    line-height: 24px;
+    color: #666;
+}
+.link .down{
+    width: 85px;
+    height: 26px;
+    line-height: 26px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* 底部 */
+.foot {
+    text-align: center;
+    font-size: 12px;
+    height: 60px;
+    line-height: 24px;
+    color: #666;
+    margin: 50px auto 10px;
+}
+.foot img{ 
+    position: relative;
+    top:3px;  
+}
+.foot .gray{
+    color: #666;
+}
+
+/* 回到顶部 */
+#top{
+    width: 30px;
+    height: 30px;
+    line-height: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+}
+
