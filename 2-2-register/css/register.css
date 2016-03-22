@@ -1,0 +1,113 @@
+/*全局*/
+*{ 
+	margin:0; 
+	padding:0; 
+	font-size:12px;
+}
+body{ 
+    background-color:#096;
+}
+a{
+	text-decoration:none;
+}
+a img{
+ 	border:0;	
+}
+ul,li{ 
+	list-style:none;
+}
+input{
+	border:1px solid #ccc;
+}
+.red{
+    color:#ff0000;
+}
+.blue{
+    color:#0000ff;
+}
+#wrap{
+	 width:710px;
+	 height:auto;
+	 margin:10px auto;
+	 background-color:#fff;
+	 border:1px solid #fff;
+	 border-radius: 30px;
+	 overflow:hidden;
+}
+
+/*头部*/
+.top{ 
+	width:650px; 
+	height:80px; 
+	margin:5px auto;
+}
+.logo{ 
+	float:left;
+}
+.link{ 
+	float:right; 
+	padding-top:60px;
+}
+.link li{ 
+	float:left; 
+	padding:0 5px;
+}
+.link li a{ 
+	color:#999;
+}
+
+
+/*表格*/
+table{
+	width:640px;
+	margin:0 auto;
+	color:#333;
+}
+table caption{
+	font-size:18px;
+	font-weight:bold;
+	height:50px;
+	line-height:50px;
+}
+table,table tr td,table tr th{
+	border:1px solid #ccc;
+	border-collapse:collapse;
+	line-height:150%;
+	padding:4px;
+}
+table tr td.title{
+	background-color:rgb(238, 238, 238);
+	text-align:left;
+	padding-left:10px;
+	color:rgb(0, 51, 153);
+	height:24px;
+	line-height:24px;
+	font-weight:bold;
+}
+table tr th{
+	text-align:right;
+	font-weight:normal
+}
+.notice{ 
+	text-align:center;
+}
+.submit{ 
+	text-align:center; 
+}
+.submit input{ 
+	margin:30px; 
+	padding:0 20px;
+}
+.select{ 
+	padding:2px;
+}
+
+/*底部*/
+.foot{ 
+	text-align:center; 
+	padding:10px 20px 20px; 
+	color:#333;
+}
+
+
+

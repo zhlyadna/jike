@@ -1,0 +1,49 @@
+/*全局*/
+*{ 
+	margin:0; 
+	padding:0; 
+}
+
+/*布局*/
+.main{
+	width:300px;
+	height:300px;
+	position:absolute;
+	left:50%; 
+	top:50%; 
+	margin-top:-150px;
+	margin-left:-150px; 
+}
+.one,.two,.three{ 
+	width:300px; 
+	height:100px;
+}
+
+
+/*5个DIV*/
+.up,.down,.left,.right,.center,.center img{ 
+	width:100px; 
+	height:100px;
+}
+.up,.down,.left,.right,.center img{ 
+	box-shadow:0 0 20px #FF0;
+}
+.up{ 
+	background-color:#ff0000; 
+	margin:0 auto; 
+}
+.down{
+	background-color:#00ff00; 
+ 	margin:0 auto;
+}
+.left{
+	background-color:#0000ff; 
+	float:left;
+}
+.center{ 
+	float:left;
+}
+.right{
+	background-color:#ff00ff; 
+	float:left;
+}
