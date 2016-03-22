@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>简易计算器</title>
+    <meta name="description" content="简易计算器" />
+    <meta name="keywords" content="简易计算器" />
+    <link rel="stylesheet" type="text/css" href="css/calculator.css" />
+ 	<script type="text/javascript" src="js/calculator.js" charset="utf-8"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<!-- 输入框 -->
+	<div class="input1">
+    	<input id="input1" type="text">
+    </div>
+
+	<!-- 运算符 -->
+	<div class="symbol">
+        <button id="add" onclick="calculator(this.id)">+</button>
+        <button id="subtract" onclick="calculator(this.id)">-</button>
+        <button id="multiply" onclick="calculator(this.id)">*</button>
+        <button id="divide" onclick="calculator(this.id)">/</button>
+	</div>    
+
+	<!-- 输入框 -->
+	<div class="input2">
+    	<input id="input2" type="text">   
+	</div>   
+
+	<!-- 等号 -->
+	<div class="equal">
+    	=
+    </div>  
+
+ 	<!-- 输出框 -->    	
+	<div class="result">
+		<input id="result" type="text">
+	</div>
+</div>
+</body>
+</html>

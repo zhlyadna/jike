@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>计算器</title>
+    <meta name="description" content="计算器" />
+    <meta name="keywords" content="计算器" />
+    <link rel="stylesheet" type="text/css" href="css/calculator.css" />
+ 	<script type="text/javascript" src="js/calculator.js" charset="utf-8"></script>
+</head>
+
+<body>
+<div id="wrap">
+    <div class="row">
+    	<input id="show" class="show" type="text" value="0" onfocus="this.blur()" />
+    </div>
+    <div class="row">
+        <div class="key-two" onclick="c()">C</div>
+        <div class="key-two" onclick="ac()">AC</div>    
+        <div class="key" id="divide" onclick="symbol(this.id)">/</div>              
+    </div>
+    <div class="row">
+        <div class="key" onclick="num(7)">7</div>
+        <div class="key" onclick="num(8)">8</div>
+        <div class="key" onclick="num(9)">9</div>
+        <div class="key" id="sin" onclick="result(this.id)">sin</div>      
+        <div class="key" id="multiply" onclick="symbol(this.id)">*</div>          
+    </div>
+    <div class="row">
+        <div class="key" onclick="num(4)">4</div>
+        <div class="key" onclick="num(5)">5</div>
+        <div class="key" onclick="num(6)">6</div>
+        <div class="key" id="cos" onclick="result(this.id)">cos</div>      
+        <div class="key" id="subtract" onclick="symbol(this.id)">-</div>       
+    </div>
+    <div class="row">
+        <div class="key" onclick="num(1)">1</div>
+        <div class="key" onclick="num(2)">2</div>
+        <div class="key" onclick="num(3)">3</div>
+        <div class="key" id="remainders" onclick="symbol(this.id)">%</div>      
+        <div class="key" id="add" onclick="symbol(this.id)">+</div>         
+    </div>
+    <div class="row">
+        <div class="key-two" onclick="num(0)">0</div>
+        <div class="key" onclick="point()">.</div>
+        <div class="key-two" id="equal" onclick="result(this.id)">=</div>           
+    </div>
+</div>
+</body>
+
+</html>

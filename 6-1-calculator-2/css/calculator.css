@@ -1,0 +1,59 @@
+/* 全局 */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+	font-family: "宋体";
+    font-size: 14px;
+}
+li{
+	list-style: none;
+}
+
+/* 计算器 */
+#wrap{
+	width: 310px;
+	height: 370px;
+	margin: 50px auto;
+	padding-top: 5px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	background: #f9f9f9;
+	box-shadow: 1px 1px 1px #cccccc;
+}
+.row,.key,.key-two{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+}
+.key,.key-two{
+	background: #e3e3e3;
+	border-radius: 5px;
+	margin: 5px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 18px;
+}
+.row{
+	width: 300px;
+	margin: 5px;
+}
+.row .key{
+	width: 50px;
+}
+.row .key-two{
+	width: 110px;
+}
+.show{
+	width: 276px;
+	height: 50px;
+	margin: 0 5px;
+	padding: 0 5px;
+	font-size: 24px;
+	border:1px solid #cccccc;
+	border-radius: 5px;
+	text-align: right;
+	background: #ffffff;
+}
+
