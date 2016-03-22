@@ -1,0 +1,101 @@
+/* 全局 */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li{ 
+    list-style: none; 
+}
+
+/* css3d */
+#box{
+    width: 306px;
+    height: 306px;
+    margin: 100px auto;  
+    transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    transform-origin:153px 153px 0;   
+    -moz-transform-origin:153px 153px 0;   
+    -webkit-transform-origin:153px 153px 0;
+    animation:css3d ease-in-out infinite 8s; 
+    -moz-animation:css3d ease-in-out infinite 8s;   
+    -webkit-animation:css3d ease-in-out infinite 8s;
+    /*-webkit-perspective:500px;*/
+}
+@keyframes css3d{
+    16%{transform:rotateY(-90deg);}
+    33%{transform:rotateY(-90deg) rotateZ(135deg);}
+    50%{transform:rotateY(225deg) rotateZ(135deg);}
+    66%{transform:rotateY(135deg) rotateZ(135deg);}
+    83%{transform:rotateY(135deg);}
+}
+@-moz-keyframes css3d{
+    16%{-moz-transform:rotateY(-90deg);}
+    33%{-moz-transform:rotateY(-90deg) rotateZ(135deg);}
+    50%{-moz-transform:rotateY(225deg) rotateZ(135deg);}
+    66%{-moz-transform:rotateY(135deg) rotateZ(135deg);}
+    83%{-moz-transform:rotateY(135deg);}
+}
+@-webkit-keyframes css3d{
+    16%{-webkit-transform:rotateY(-90deg);}
+    33%{-webkit-transform:rotateY(-90deg) rotateZ(135deg);}
+    50%{-webkit-transform:rotateY(225deg) rotateZ(135deg);}
+    66%{-webkit-transform:rotateY(135deg) rotateZ(135deg);}
+    83%{-webkit-transform:rotateY(135deg);}
+}
+
+/* 魔方布局 */
+#box ul{
+    position: absolute;
+    width: 306px;
+    height: 306px;
+    border: 1px solid #000;
+    font-size:36px;
+    text-align: center;
+    opacity:0.3;
+}
+#box ul li{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #999;  
+}
+
+/* 魔方6个面 */
+.one{
+    transform:translateZ(153px);
+    -moz-transform:translateZ(153px);    
+    -webkit-transform:translateZ(153px);
+    background-color:#ff0000;
+}
+.two{
+    transform:rotateX(-90deg) translateZ(153px);
+    -moz-transform:rotateX(-90deg) translateZ(153px);    
+    -webkit-transform:rotateX(-90deg) translateZ(153px);
+    background-color:#00ff00;
+}
+.three{
+    transform:rotateX(90deg) translateZ(153px);
+    -moz-transform:rotateX(90deg) translateZ(153px);    
+    -webkit-transform:rotateX(90deg) translateZ(153px);
+    background-color:#0000ff;
+}
+.four{
+    transform:rotateY(-90deg) translateZ(153px);
+    -moz-transform:rotateY(-90deg) translateZ(153px);  
+    -webkit-transform:rotateY(-90deg) translateZ(153px);
+     background-color:#00ffff;   
+ } 
+.five{
+    transform:rotateY(90deg) translateZ(153px);
+    -moz-transform:rotateY(90deg) translateZ(153px);
+    -webkit-transform:rotateY(90deg) translateZ(153px);
+    background-color:#ff00ff; 
+}
+.six{
+    transform:translateZ(-153px);
+    -moz-transform:translateZ(-153px);    
+    -webkit-transform:translateZ(-153px);
+    background-color:#ffff00;
+}

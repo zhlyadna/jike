@@ -1,0 +1,326 @@
+/* 全局 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 天空 */
+.air{
+	width: 400px;
+	height:50px;
+	margin: 0 auto;
+	top: 0;
+	position: relative;
+	animation: air 2s ease-in infinite;
+	-moz-animation: air 2s ease-in infinite;	
+	-webkit-animation: air 2s ease-in infinite;	
+}
+@-keyframes air{
+	0%{top: 0;}
+	100%{top: 150px;}	
+}@-moz-keyframes air{
+	0%{top: 0;}
+	100%{top: 150px;}	
+}@-webkit-keyframes air{
+	0%{top: 0;}
+	100%{top: 150px;}	
+}
+
+/* 雨滴 */
+.rain{
+	height:40px; 
+	width:40px;  
+	position:relative;
+	float: left;
+	margin: 15px 20px 0; 
+	display:inline-block;
+} 
+.rain:before{
+	content:''; 
+	height:30px; 
+	width:30px; 
+	display:block; 
+	position:absolute;
+	top:2px; 
+	left:0px;
+	line-height:30px;
+	background:#00ffff;
+	text-align:center;
+	border-radius:40px;
+	-moz-border-radius:40px; 	
+	-webkit-border-radius:40px;
+}
+.rain:after{
+	content:''; 
+	height:0px; 
+	width:0px; 
+	display:block; 
+	position:absolute;
+	top:-10px;
+	left:2px;
+	border:10px transparent solid;
+	border-bottom-color:#00ffff;
+	border-width:0px 13px 20px 13px; 
+}
+
+/* 地面 */
+.ground{
+	position: relative;
+	margin: 0 auto;
+	width: 410px;
+	height: 400px;
+	top:120px;
+}
+
+/* 雨伞 */
+.umbrella{
+	width: 410px;
+	height: 400px;
+	position: absolute;
+}
+.umbrella .top{
+	width: 20px;
+	height: 20px;
+	background: #9AFF9A;
+	border-radius: 50px 50px 0 0;
+	-moz-border-radius: 50px 50px 0 0;	
+	-webkit-border-radius: 50px 50px 0 0;
+	position: relative;
+	left: 195px;
+}
+.umbrella .middle{
+	width: 10px;
+	height: 150px;
+	position: relative;
+	left: 200px;
+	background-color: #9AFF9A;
+}
+.umbrella .middle .left{
+	width: 200px; 
+	height: 130px;
+	border-top: 130px solid #9AFF9A; 
+	border-radius: 180px 0 0 100px;
+	-moz-border-radius: 180px 0 0 100px; 	
+	-webkit-border-radius: 180px 0 0 100px; 
+	position: absolute;
+	right: 10px;
+}
+.umbrella .middle .right{
+	width: 200px; 
+	height: 130px;
+	border-top: 130px solid #9AFF9A; 
+	border-radius: 0 180px 100px 0;
+ 	-moz-border-radius: 0 180px 100px 0; 	
+	-webkit-border-radius: 0 180px 100px 0; 
+	position: absolute;
+	left: 10px;
+}
+.umbrella .middle .down{
+	width: 10px;
+	height: 150px;
+	position: absolute;
+	top: 150px;
+	background-color: #9AFF9A;
+}
+.umbrella .body{
+	width: 10px;
+	height: 100px;
+	position: relative;
+	left: 200px;
+	top: 100px;
+	background-color: #9AFF9A;
+}
+.umbrella .hand{
+	width: 20px;
+	height: 0px;
+	border: 0 solid transparent;
+	border-bottom: 20px solid #9AFF9A;
+	border-right: 20px solid #9AFF9A; 
+	-border-radius: 0 0 20px 20px;	
+	-moz-border-radius: 0 0 20px 20px;	  
+	-webkit-border-radius: 0 0 20px 20px;
+	position: relative;
+	left: 170px;
+	top:100px;
+}
+.umbrella .hand .inner{
+	width: 10px;
+	height: 0px;
+	border: 0 solid transparent;
+	border-bottom: 10px solid #fff;
+	border-right: 10px solid #fff;   
+	border-radius: 0 0 10px 10px;	
+	-moz-border-radius: 0 0 10px 10px;	
+	-webkit-border-radius: 0 0 10px 10px;
+	position: absolute;
+	left: 10px;
+}
+
+/* 男人 */
+.l-people{
+	width: 70px;
+	height: 160px;
+	position: absolute;
+	top: 180px;
+	left: 80px;
+}
+.man{
+	position: relative;
+	width: 70px;
+	height: 160px;
+}
+.man .head{
+	width: 40px;
+	height: 40px;
+	background: #0000ff;
+	border-radius: 50px;	
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	position: absolute;
+	top:0;
+	left:15px;
+}
+.man .body{
+	width: 40px;
+	height: 60px;
+	background: #0000ff;
+	position: absolute;
+	top:40px;
+	left:15px;
+}
+.man .l-arm{
+	width: 15px;
+	height: 60px;
+	background: #0000ff;
+	border-radius: 10px 0 0 10px;	
+	-moz-border-radius: 10px 0 0 10px;	
+	-webkit-border-radius: 10px 0 0 10px;
+	position: absolute;
+	top:40px;
+	left:0;
+	transform:rotate(7deg);
+}
+.man .r-arm{
+	width: 15px;
+	height: 60px;
+	background: #0000ff;
+	border-radius:0 10px 10px 0;
+	-moz-border-radius:0 10px 10px 0;	
+	-webkit-border-radius:0 10px 10px 0;
+	position: absolute;
+	top:40px;
+	left:55px;
+	transform:rotate(-7deg);
+}
+.man .l-leg{
+	width: 18px;
+	height: 60px;
+	background: #0000ff;
+	border-radius: 0 0 10px 0;
+	-moz-border-radius: 0 0 10px 0;	
+	-webkit-border-radius: 0 0 10px 0;
+	position: absolute;
+	top:100px;
+	left:15px;
+}
+.man .r-leg{
+	width: 18px;
+	height: 60px;
+	background: #0000ff;
+	border-radius: 0 0 0 10px;
+	-moz-border-radius: 0 0 0 10px;	
+	-webkit-border-radius: 0 0 0 10px;
+	position: absolute;
+	top:100px;
+	left:37px;
+}
+
+/* 女人 */
+.r-people{
+	width: 70px;
+	height: 160px;
+	position: absolute;
+	top: 180px;
+	left: 260px;
+}
+.woman{
+	position: relative;
+	width: 70px;
+	height: 160px;
+}
+.woman .head{
+	width: 40px;
+	height: 40px;
+	background: #ff0000;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	top:0;
+	left:15px;
+}
+.woman .body{
+	width:50px;
+	height:60px;
+	background-color: #ff0000;
+	clip-path:polygon(10px 0,40px 0,40px 40px,50px 60px,0px 60px,10px 40px);
+	-moz-clip-path:polygon(10px 0,40px 0,40px 40px,50px 60px,0px 60px,10px 40px);
+	-webkit-clip-path:polygon(10px 0,40px 0,40px 40px,50px 60px,0px 60px,10px 40px);
+	position: absolute;
+	top:40px;
+	left:10px;
+}
+.woman .l-arm{
+	width: 15px;
+	height: 60px;
+	background: #ff0000;
+	border-radius: 10px 0 0 10px;
+	-moz-border-radius: 10px 0 0 10px;
+	-webkit-border-radius: 10px 0 0 10px;
+	position: absolute;
+	top:40px;
+	left:2px;
+	transform:rotate(7deg);
+	-moz-transform:rotate(7deg);
+	-webkit-transform:rotate(7deg);
+}
+.woman .r-arm{
+	width: 15px;
+	height: 60px;
+	background: #ff0000;
+	border-radius:0 10px 10px 0;	
+	-moz-border-radius:0 10px 10px 0;	
+	-webkit-border-radius:0 10px 10px 0;
+	position: absolute;
+	top:40px;
+	left:53px;
+	transform:rotate(-7deg);
+	-moz-transform:rotate(-7deg);
+	-webkit-transform:rotate(-7deg);
+}
+
+.woman .l-leg{
+	width: 18px;
+	height: 60px;
+	background: #ff0000;
+	border-radius: 0 0 10px 0;
+	-moz-border-radius: 0 0 10px 0;	
+	-webkit-border-radius: 0 0 10px 0;
+	position: absolute;
+	top:100px;
+	left:15px;
+}
+.woman .r-leg{
+	width: 18px;
+	height: 60px;
+	background: #ff0000;
+	border-radius: 0 0 0 10px;
+	-moz-border-radius: 0 0 0 10px;	
+	-webkit-border-radius: 0 0 0 10px;
+	position: absolute;
+	top:100px;
+	left:37px;
+}
+
+
+

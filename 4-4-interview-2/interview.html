@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,intial=1">
+    <title>前端面试题</title>
+    <meta name="description" content="前端面试题" />
+    <meta name="keywords" content="前端面试题" />
+    <link rel="stylesheet" type="text/css" href="css/interview.css" />
+    <script language="JavaScript" type="text/javascript"> 
+		function TabChange(TabId,TabName,TabCount) { 
+		    for(i=0;i<=TabCount;i++) { 
+		        document.getElementById(TabName+i).style.display="none"; 
+		    } 
+		    document.getElementById(TabName+TabId).style.display="block"; 
+		} 
+		</script> 
+</head>
+
+<body>
+<div id="wrap">
+	<!-- 左侧区域 -->
+	<ul>
+		<li class="first">前端面试题</li>
+		<li class="tab_title" onmouseover="JavaScript:TabChange('0','TAB_',9)" >
+			1.前端页面有哪三层构成，分别是什么？作用是什么？
+		</li>
+		<li class="tab_title" onmouseover="JavaScript:TabChange('1','TAB_',9)" >
+			2.你做的页面在哪些流览器测试过？这些浏览器的内核分别是什么？
+		</li>
+		<li class="tab_title" onmouseover="JavaScript:TabChange('2','TAB_',9)" >
+			3.xhtml和html有什么区别？
+		</li>
+		<li class="tab_title" onmouseover="JavaScript:TabChange('3','TAB_',9)" >
+			4.div+css的布局较table布局有什么优点？
+		</li>
+		<li class="tab_title" onmouseover="JavaScript:TabChange('4','TAB_',9)" >
+			5.CSS引入的方式有哪些？link和@import的区别是？
+		</li>
+		<li class="tab_title" onmouseover="JavaScript:TabChange('5','TAB_',9)" >
+			6.如何区别display:none与visibility:hidden?
+		</li>
+		<li class="tab_title" onmouseover="JavaScript:TabChange('6','TAB_',9)" >
+			7.清除浮动的几种方式，各自的优缺点。
+		</li>
+		<li class="tab_title" onmouseover="JavaScript:TabChange('7','TAB_',9)" >
+			8.什么是Css Hack？ie6,7,8的hack分别是什么？
+		</li>
+		<li class="tab_title" onmouseover="JavaScript:TabChange('8','TAB_',9)" >
+			9.什么是SVG（Scalable Vector Graphics可缩放矢量图形）？
+		</li>
+		<li class="tab_title" onmouseover="JavaScript:TabChange('9','TAB_',9)" >
+			10.除了音频和视频，HTML5 还支持其他什么新的媒体元素？
+		</li>
+	</ul>
+
+	<!-- 右侧区域 -->
+	<div class="tab_content" id="TAB_0" style="display:block;">
+		<p>网页的结构层（structural layer）由 HTML 或 XHTML 之类的标记语言负责创建。标签，也就是那些出现在尖括号里的单词，对网页内容的语义含义做出了描述，但这些标签不包含任何关于如何显示有关内容的信息。</p>
+		<p>网页的表示层（presentation layer） 由 CSS 负责创建。 CSS 对“如何显示有关内容”的问题做出了回答。</p>
+		<p>网页的行为层（behavior layer）负责回答“内容应该如何对事件做出反应”这一问题。这是 Javascript 语言和 DOM 主宰的领域。</p>
+	</div>
+
+	<div class="tab_content" id="TAB_1">
+		<p>IE: trident内核</p>
+		<p>Firefox：gecko内核</p>
+		<p>Safari:webkit内核</p>
+		<p>Opera:以前是presto内核，Opera现已改用Google Chrome的Blink内核</p>
+		<p>Chrome:Blink(基于webkit，Google与Opera Software共同开发)</p>
+	</div>
+
+	<div class="tab_content" id="TAB_2">
+		<p>HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言。</p>
+		<p>最主要的不同：</p>
+		<p>XHTML 元素必须被正确地嵌套。</p>
+		<p>XHTML 元素必须被关闭。</p>
+		<p>标签名必须用小写字母。</p>
+		<p>XHTML 文档必须拥有根元素。</p>
+	</div>
+
+	<div class="tab_content" id="TAB_3">
+		<p>改版的时候更方便，只要改css文件。</p>
+		<p>页面加载速度更快、结构化清晰、页面显示简洁。</p>
+		<p>表现与结构相分离。</p>
+		<p>易于优化（seo）搜索引擎更友好，排名更容易靠前。</p>
+	</div>
+
+	<div class="tab_content" id="TAB_4">
+		<p>内联 内嵌 外链 导入</p>   
+		<p>区别：</p>
+		<p>link无兼容性，@import在CSS2.1以下浏览器不支持。</p>
+		<p>link支持使用javascript改变样式，后者不可。</p>
+	</div>
+
+	<div class="tab_content" id="TAB_5">
+		<p>相同的是display:none与visibility:hidden都可以用来隐藏某个元素；</p>
+		<p>不同的是display:none在隐藏元素的时候，将其占位空间也去掉；而visibility:hidden只是隐藏了内容而已，其占位空间仍然保留。</p>
+	</div>
+
+	<div class="tab_content" id="TAB_6">
+		<p>使用空标签清除浮动 clear:both（理论上能清楚任何标签，，，增加无意义的标签）</p>
+		<p>使用overflow:auto（空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE）</p>
+		<p>是用afert伪元素清除浮动(用于非IE浏览器)</p>
+	</div>
+
+	<div class="tab_content" id="TAB_7">
+		<p>针对不同的浏览器写不同的CSS code的过程，就是CSS hack。</p>
+		<p>background-color:blue;          /*firefox*/</p>  
+		<p>background-color:red\9;         /*all ie*/</p>  
+		<p>_background-color:orange;       /*ie6*/</p>         
+		<p>+background-color:pink;         /*ie7*/</p>  
+		<p>background-color:yellow\0;      /*ie8*/</p>  
+		<p>background-color:purple\9;      /*ie9*/ </p> 
+		<p>background-color:black\0;       /*opera*/</p>
+		<p>background-color:gray;          /*chrome and safari*/</p>  
+	</div>
+
+	<div class="tab_content" id="TAB_8">
+		<p>SVG（Scalable Vector Graphics可缩放矢量图形）是一种基于矢量的图像格式。这是一个有效的格式（文件小）。你可以对他们进行缩放和任何尺寸下保持清晰（提及到小尺寸下光栅占优势可以加分）。你可以使用CSS和JavaScript来修饰他们以及使用SVG指定的滤镜做很多事情，比如说模糊效果。</p>
+	</div>
+
+	<div class="tab_content" id="TAB_9">
+		<p>HTML 5 对媒体支持很强，除了 audio 和 video 外，还提供：</p>
+		<p>embed 作为外部应用的容器</p>
+		<p>track 定义媒体的文本跟踪</p>
+		<p>source 对多种媒体源的支持很有帮助</p>
+	</div>
+</div>
+</body>
+</html>
+
